@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-control" content="public">
+  <title>HISHOT 2023</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.1/swiper-bundle.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.1/swiper-bundle.min.css">
+  </noscript>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+  </noscript>
+
+  <!-- load fonts on preload/defer  -->
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap" as="style"
+    onload="this.onload=null; this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap">
+  </noscript>
+
+  <!-- build tailwind: npx tailwindcss -i ./style.css -o ./src/tailwind.css -->
+  <!-- uncomment below after tailwind build or and on production stage -->
+  <!-- <link rel="stylesheet" href="./src/tailwind.css" type="text/css" /> -->
+
+  <!-- comment below if on production stage and not development -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="no-scroll">
+  <div class="preloader">
+    <div class="preloader-container">
+      <div class="preloader-main">
+        <img src="assets/final-preloader-animation-15fps.webp" draggable="false" alt="">
+      </div>
+      <img class="absolute preloader-blob" draggable="false" src="assets/BlobAssets var1.webp" alt="">
+      <img class="absolute preloader-mesh1" draggable="false" src="assets/Mesh 3.webp" alt="">
+      <img class="absolute preloader-mesh2" draggable="false" src="assets/Mesh 4.webp" alt="">
+      <img class="absolute preloader-ellipse" draggable="false" src="assets/preEllipse 15.svg" alt="">
+    </div>
+  </div>
+
+  <nav>
+    <a href="">
+      <img loading="lazy" class="nav-logo" src="assets/Logo-Navbar.webp" alt="logo">
+    </a>
+    <button onclick="toggleNavbar()">
+      <img loading="lazy" class="nav-hamburger" src="assets/hamburger.svg" alt="hamburger">
+    </button>
+    <div class="div-menu" id="menu">
+      <a onclick="toggleNavbar()" href="#">HOME</a>
+      <a onclick="toggleNavbar()" href="#About">ABOUT</a>
+      <a onclick="toggleNavbar()" href="#Events">EVENTS</a>
+      <a onclick="toggleNavbar()" href="#faq">FAQ</a>
+      <a onclick="toggleNavbar()" class="btn" href="https://registration.himtibinus.or.id/home" target="_blank">LOG
+        IN
+      </a>
+    </div>
+  </nav>
+
+  <!-- VALENTIO -->
+  <!-- Welcome to HISHOT -->
+  <div class="wave">
+    <img loading="lazy" class="wave-line" draggable="false" src="assets/Group 21.svg">
+  </div>
+  <img loading="lazy" src="assets/BluePattern 1.svg" draggable="false" class="pointer-events-none img-bg" id="bp1">
+  <div class="welcome" id="welcome">
+    <!-- <img class="decorat-ellipse" src="assets/Ellipse 14.webp"> -->
+    <div class="welcome-container">
+      <!-- <h1>Welcome</h1>
+        <h1>To</h1>
+        <h1 class="title-name">HISHOT</h1> -->
+      <div class="logo_hishot">
+        <img loading="lazy" draggable="false" src="assets/logo hishot 2.webp" class="hishot_fix">
+      </div>
+      <div class="both-button">
+        <button class="pointer-events-auto" type="button" id=""><img loading="lazy" src="/assets/Start 1.svg"><a
+            href="#About">Get
+            Started</a></button>
+        <button class="pointer-events-auto" type="button">
+          <img draggable="false" loading="lazy" src="/assets/Guide Book 1.svg"><a href="https://bit.ly/HISHOTGuideBook"
+            target="_blank">Guide Book</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="decorat">
+      <img draggable="false" loading="lazy" class="pointer-events-none mesh2-welcome" src="assets/Mesh 2.webp">
+      <img draggable="false" loading="lazy" class="pointer-events-none blob2-welcome blob-animation"
+        src="assets/BlobAssets var1.webp">
+    </div>
+  </div>
+  <img draggable="false" loading="lazy" src="assets/BluePattern 2.svg" class="pointer-events-none img-bg" id="bp2">
+
+  <div class="main-content">
+    <!-- STEFFI -->
+    <div id="About">
+      <h2 id="about-title">ABOUT HISHOT</h2>
+      <div class="about-line1"></div>
+      <div class="about-line2"></div>
+      <img draggable="false" loading="lazy" class="mesh" src="./assets/Mesh 3.webp">
+      <div class="about-text">
+        <p>HIMTI Bina Nusantara is organizing an annual event called HISHOT, which stands for HIMTI<br>
+          Seminar-Workshop and Study Tour. The event is designed to enrich participants' knowledge<br>
+          and experience, and this year's focus is on the theme of "ADVANCE: Aiming to Advance the World with AI".<br>
+          By joining and participating in HISHOT 2023, the community is given an opportunity to receive<br>
+          a better understanding of how Artificial Intelligence is used to advance the world today.</p>
+      </div>
+      <img draggable="false" loading="lazy" loading="lazy" class="mesh2" src="./assets/Mesh 4.webp">
+      <img draggable="false" loading="lazy" loading="lazy" class="donut" src="./assets/MeshDonut 1.webp">
+
+      <div id="video-line">
+        <lite-youtube draggable="false" videoid="iD4NMFia698" playlabel="HISHOT 2023"></lite-youtube>
+      </div>
+      <img draggable="false" loading="lazy" loading="lazy" class="blob" src="./assets/BlobAssets var2.webp">
+      <img draggable="false" loading="lazy" class="patterns" src="./assets/BluePattern 5.svg">
+    </div>
+
+
+    <!-- Events (Jasson W & Jason S) -->
+    <div id="Events">
+      <div class="blur-circle"></div>
+      <div id='event-title-container'>
+        <div class='event-line'></div>
+        <h2 id="Event-title">Events</h2>
+        <div class='event-line'></div>
+      </div>
+      <div id="event-navbar" class="glow">
+        <div class="event-item" id="event-seminar" onclick="changeEventCategory(this)">
+          <img draggable="false" loading="lazy" class="event-title-icon seminar-icon" src="./assets/seminar.svg">
+          <p>Seminar</p>
+        </div>
+        <div class="event-item" id="event-workshop" onclick="changeEventCategory(this)">
+          <img draggable="false" loading="lazy" class="event-title-icon workshop-icon" src="./assets/workshop.svg">
+          <p>Workshop</p>
+        </div>
+        <div selected class="event-item" id="event-studyTour" onclick="changeEventCategory(this)">
+          <img draggable="false" loading="lazy" class="event-title-icon study-tour-icon" src="./assets/studyTour.svg">
+          <p>Study Tour</p>
+        </div>
+      </div>
+      <img draggable="false" loading="lazy" class="blob-3" src="./assets/BlobAssets var3.webp"></img>
+      <div class="event-details-container ">
+        <!-- events here -->
+
+      </div>
+    </div>
+
+
+    <!-- ETHELIND -->
+    <div class="our-location">
+
+      <div class="our-location-title-container">
+        <h2 class="our-location-title">OUR LOCATION</h2>
+        <h2 class="our-location-title-shorter">LOCATION</h2>
+        <h2 class="our-location-title-short">LOC</h2>
+        <div class="our-location-line"></div>
+      </div>
+
+      <image draggable="false" class="our-location-image" src="./assets/our-location-header-icon.png"></image>
+
+      <div class="our-location-content">
+        <img draggable="false" loading="lazy" class="our-location-content-image" src="./assets/Alsut-picture.webp">
+
+        <div class="our-location-address">
+          <h2 class="our-location-address-header">Binus Alam Sutera</h2>
+          <p class="our-location-address-body">Jl. Jalur Sutera Bar. No.Kav. 21, RT.001/RW.004, Panunggangan,
+            Kec. Pinang, Kota Tangerang, Banten 15143</p>
+          <a href="https://goo.gl/maps/N2ihHcQ2dpMEwXyZ9" target="_blank">
+            <button type="button" class="our-location-direction-button">
+              <img draggable="false" loading="lazy" class="our-location-direction-icon"
+                src="./assets/direction-icon.png"> Directions
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- <div class = "clear"></div> -->
+      <img draggable="false" loading="lazy" class="our-location-blob" src="./assets/BlobAssets var5.webp">
+      <div class="our-location-bottom-line1"></div>
+      <div class="blur-box">
+        <div class="our-location-background-blur"></div>
+      </div>
+
+      <div class="pattern-container">
+
+        <img draggable="false" loading="lazy" src="./assets/BluePattern 4.svg" class="blue-pattern-4">
+      </div>
+    </div>
+
+
+    <!-- NORBERT -->
+    <div class="faq" id="faq">
+      <div class="faq_background-blur"></div>
+      <img draggable="false" loading="lazy" class="faq_globe" src="./assets/MeshGlobe.webp" alt="" />
+      <img draggable="false" loading="lazy" class="patterns-faq" src="./assets/BluePattern 5.svg">
+
+      <div class="faq_title-section">
+        <h1 class="faq_title-section_title">FREQUENTLY ASKED QUESTION</h1>
+        <h1 class="faq_title-section_title faq_title-short">FAQ</h1>
+        <img draggable="false" loading="lazy" src="./assets/wpf_faq.png" class="faq_title-section_image" />
+        <img draggable="false" loading="lazy" class="faq_blob" src="./assets/BlobAssets var1.webp" alt="">
+      </div>
+
+      <div class="faq_accordion">
+        <div class="faq_accordion_item">
+          <button class="faq_accordion_header">
+            <h2 class="faq_accordion_question">
+              What is HISHOT?
+            </h2>
+            <div class="faq_plus">
+              <div class="faq_plus-horizontal"></div>
+              <div class="faq_plus-vertical"></div>
+            </div>
+          </button>
+          <div class="faq_accordion_answer">
+            HISHOT stands for HIMTI Seminar-Workshop and Study Tour, which is an annual event held by HIMTI Bina
+            Nusantara with the aim of expanding knowledge through new experiences. This year, HISHOT 2023 is
+            bringing
+            a
+            new theme of "Aiming to Advance the world with AI". So, what are you waiting for? With this
+            opportunity,
+            you
+            can dive into the world of AI and enhance your knowledge through gaining experiences.
+          </div>
+        </div>
+
+        <div class="faq_accordion_item">
+          <button class="faq_accordion_header">
+            <h2 class="faq_accordion_question">
+              What events are in HISHOT 2023?
+            </h2>
+            <div class="faq_plus">
+              <div class="faq_plus-horizontal"></div>
+              <div class="faq_plus-vertical"></div>
+            </div>
+          </button>
+          <div class="faq_accordion_answer">
+            <p>HISHOT consists of 6 events which are seminars, workshops, and study tours.</p>
+            <br />
+            <ol class="faq_accordion_answer-list">
+              <li><b>Seminar (onsite):</b></li>
+              <li>1. AI for Good: How Artificial Intelligence Can Improve Human Life - 17 June 2023</li>
+              <br />
+              <li><b>Workshop (online):</b></li>
+              <li>1. Unlocking the Power of Data: A Data Science Workshop - 22 July 2023</li>
+              <li>2. Seeing Beyond the Pixels: Exploring Computer Vision - 29 July 2023</li>
+              <br />
+              <li><b>Study tour:</b></li>
+              <li>1. STDN - TBA</li>
+              <li>2. STLN - TBA</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="faq_accordion_item">
+          <button class="faq_accordion_header">
+            <h2 class="faq_accordion_question">
+              When will the events be held?
+            </h2>
+            <div class="faq_plus">
+              <div class="faq_plus-horizontal"></div>
+              <div class="faq_plus-vertical"></div>
+            </div>
+          </button>
+          <div class="faq_accordion_answer">
+            <p>The series of event will be held from June-Desember, with the exact date as follow:</p>
+            <br />
+            <ul class="faq_accordion_answer-list">
+              <li><b>Seminar (onsite):</b></li>
+              <li>1. AI for Good: How Artificial Intelligence Can Improve Human Life - 17 June 2023</li>
+              <br />
+
+              <li><b>Workshop (online):</b></li>
+
+              <li>1. Unlocking the Power of Data: A Data Science Workshop - 22 July 2023</li>
+              <li>2. Seeing Beyond the Pixels: Exploring Computer Vision - 29 July 2023</li>
+              <br />
+              <li><b>Study tour:</b></li>
+              <li>1. STDN - TBA</li>
+              <li>2. STLN - TBA</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq_accordion_item">
+          <button class="faq_accordion_header">
+            <h2 class="faq_accordion_question">
+              Am I eligible to join HISHOT 2023?
+            </h2>
+            <div class="faq_plus">
+              <div class="faq_plus-horizontal"></div>
+              <div class="faq_plus-vertical"></div>
+            </div>
+          </button>
+          <div class="faq_accordion_answer">
+            Of course, HISHOT is open to the public, so for those who are interested in our events you are
+            eligible to
+            join!
+          </div>
+        </div>
+
+        <div class="faq_accordion_item">
+          <button class="faq_accordion_header">
+            <h2 class="faq_accordion_question">
+              How to register for HISHOT 2023?
+            </h2>
+            <div class="faq_plus">
+              <div class="faq_plus-horizontal"></div>
+              <div class="faq_plus-vertical"></div>
+            </div>
+          </button>
+          <div class="faq_accordion_answer">
+            You can visit this <a href="https://registration.himtibinus.or.id/home" target="_blank"
+              class="faq_accordion_answer-link">[link]</a> to
+            register. If you are new, you can register
+            as
+            Binusian
+            or
+            Non-Binusian and fill in all of the required data to get the member account. After that, you can
+            choose
+            the
+            event that you are interested in and participate in it. For further information, you can check our
+            event
+            guidebook for registration.
+          </div>
+        </div>
+
+        <div class="faq_accordion_item">
+          <button class="faq_accordion_header">
+            <h2 class="faq_accordion_question">
+              What are the benefits of joining HISHOT 2023?
+            </h2>
+            <div class="faq_plus">
+              <div class="faq_plus-horizontal"></div>
+              <div class="faq_plus-vertical"></div>
+            </div>
+          </button>
+          <div class="faq_accordion_answer">
+            In HISHOT, you can get both experience and knowledge that will be difficult to find in another event.
+            For
+            Binusian, you will receive SAT points and for all of the participants will get an e-certificate.
+          </div>
+        </div>
+
+        <div class="faq_accordion_item">
+          <button class="faq_accordion_header">
+            <h2 class="faq_accordion_question">
+              Is there any transportation for Binusian from the Kemanggisan Region?
+            </h2>
+            <div class="faq_plus">
+              <div class="faq_plus-horizontal"></div>
+              <div class="faq_plus-vertical"></div>
+            </div>
+          </button>
+          <div class="faq_accordion_answer">
+            Of course, you will get a free shuttle bus limited to the first 29 seats for Binusian from
+            the Kemanggisan region.
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- </div>
+  </div> -->
+
+
+    <!-- VERREN -->
+    <div class="medpar">
+      <img class="medpar-blob-assets2" loading="lazy" src="./assets/BlobAssets var4.webp">
+      <div class="slider-area">
+        <h2>Our Sponsor</h2>
+
+        <div class="sponsor-wrapper">
+          <img loading="lazy" alt="" src="./assets/logo TP-Link putih.png">
+        </div>
+      </div>
+      <div class="text-slider-area">
+        <h2>Our Partners</h2>
+      </div>
+
+      <img class="medpar-ellipse" loading="lazy" src="./assets/BlobAssets var1.webp">
+
+      <div class="wrapper">
+        <div class="item"><img alt="" src="./assets/logo-medpar-1 1.svg"></div>
+        <div class="item"><img alt="" src="./assets/logo-medpar-2 1.svg"></div>
+        <div class="item"><img alt="" src="./assets/logo-medpar-3 1.svg"></div>
+        <div class="item"><img alt="" src="./assets/logo-medpar-10 1.svg"></div>
+        <div class="item"><img alt="" src="./assets/logo-medpar-4 1.svg"></div>
+        <div class="item"><img alt="" src="./assets/logo-medpar-5 1.svg"></div>
+        <div class="item"><img alt="" src="./assets/logo-medpar-9 1.svg"></div>
+        <div class="item"><img alt="" src="./assets/logo-medpar-6 1.svg"></div>
+        <div class="item"><img alt="" src="./assets/logo-medpar-7 1.svg"></div>
+        <div class="item"><img alt="" src="./assets/logo-medpar-8 1.svg"></div>
+      </div>
+    </div>
+
+    <div class="logo-dewa-web">
+      <h2>Supported By</h2>
+      <img class="dewa-web" loading="lazy" src="./assets/Component 2.svg">
+    </div>
+
+    <div class="blur-medpar">
+      <div class="our-partners-background-blur"></div>
+    </div>
+  </div>
+
+  </div>
+
+
+
+  <!-- FELIX -->
+  <footer class="footer">
+    <div class="footer-background"></div>
+    <div class="footer-images">
+      <div class="footer-other-logo">
+        <img draggable="false" class="footer-logo-binus" src="assets/logo binus.svg" loading="lazy" alt="BINUS Logo">
+        <img draggable="false" class="footer-logo-himti" src="assets/logo himti.svg" loading="lazy" alt="HIMTI Logo">
+      </div>
+      <div class="footer-logo">
+        <img draggable="false" src="assets/logo hishot 2.webp" loading="lazy" alt="">
+      </div>
+    </div>
+    <div class="footer-social-media">
+      <a href="https://www.instagram.com/hishot_2023/" target="_blank" class="icon icon--instagram">
+        <i class="ri-instagram-line"></i>
+      </a>
+      <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=893jxupw" class="icon icon--line">
+        <i class="ri-line-line"></i>
+      </a>
+    </div>
+    <div class="footer-copyright">
+      <p>
+        <span>&copy;</span> Copyright HIMTI Binus University. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
+<script src="script.js" defer async></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.1/swiper-bundle.min.js" defer async></script>
+<script src="./yt-lite-embed.js" async defer></script>
+
+</html>
